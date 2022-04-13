@@ -68,3 +68,11 @@ print(f"4.feladat: 2007-ben {len(csatlakozas)} ország csatlakozott")
 magyar = [sor.datum for sor in lista if sor.orszag == "Magyarország"]
 
 print(f"5.feladat: Magyarország csatlakozás dátuma: {magyar[0]}")
+
+#6______________________________________________________________
+kereso_majus = [sor.honap for sor in lista if sor.honap == "05"]
+
+if len(kereso_majus) > 0:
+  print("6.feladat: Májusban volt csatlakozás!")
+else:
+  print("6.feladat: Májusban nem volt csatlakozás!")
