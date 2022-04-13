@@ -62,3 +62,9 @@ print(f"3.feladat: Eu tagállamainak száma: {len(lista)} db")
 csatlakozas = [sor.orszag for sor in lista if sor.ev == 2007]
 
 print(f"4.feladat: 2007-ben {len(csatlakozas)} ország csatlakozott")
+
+#5______________________________________________________________
+
+magyar = [sor.datum for sor in lista if sor.orszag == "Magyarország"]
+
+print(f"5.feladat: Magyarország csatlakozás dátuma: {magyar[0]}")
