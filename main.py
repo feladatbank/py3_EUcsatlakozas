@@ -56,3 +56,9 @@ with open("EUcsatlakozas.txt","r",encoding="latin2") as f:
 #3______________________________________________________________
   
 print(f"3.feladat: Eu tagállamainak száma: {len(lista)} db")
+
+#4______________________________________________________________
+
+csatlakozas = [sor.orszag for sor in lista if sor.ev == 2007]
+
+print(f"4.feladat: 2007-ben {len(csatlakozas)} ország csatlakozott")
